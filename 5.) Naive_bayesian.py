@@ -24,7 +24,7 @@ X = pd.DataFrame(X_sc.fit_transform(X))
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, random_state = 0, test_size = 0.4)
 
-#fitting SVM classifier
+#fitting Naive Bayesian classifier
 from sklearn.naive_bayes import GaussianNB
 classifier = GaussianNB()
 classifier.fit(X_train, Y_train.values.ravel())
@@ -56,7 +56,7 @@ ax1.set_xlabel("Age")
 ax1.set_ylabel("Salary")
 ax1.legend()
 
-#Visualizing SVM.
+#Visualizing Naive Bayesian.
 ngridx = 100
 ngridy = 200
 x, y = X_test[0].values, X_test[1].values
