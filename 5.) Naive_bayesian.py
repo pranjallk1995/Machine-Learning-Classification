@@ -1,4 +1,4 @@
-#SVM Classifier
+#Naive Bayesian Classifier
 
 #inporting libraries
 import numpy as np
@@ -91,5 +91,3 @@ ax2.set_ylabel("Salary")
 ax2.legend()
 
 plt.show()
-
-#performs slightly better than improved Logistic Regression on this dataset. (see confusion matrix).
